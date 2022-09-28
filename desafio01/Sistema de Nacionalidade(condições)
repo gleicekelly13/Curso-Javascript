@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>País</title>
+</head>
+<body>
+    <h1>Sistema de nacionalidade</h1>
+    Qual a sua nacionalidade? <input type="text" name="txtnac" id="txtnac">
+    <input type="button" value="Verificar" onclick="confirmar()">
+    <div id="pais"></div>
+
+    <script>
+        function confirmar () {
+            var txtp = document.querySelector('#txtnac')
+            var p = document.querySelector('#pais')
+            var nac = txtp.value
+            pais.innerHTML = `<p>Sua nacionalidade é <strong>${nac}</strong></p>`
+            if(nac == 'Brasileiro') {
+                pais.innerHTML += `<p>Você é <strong>brasileiro</strong></p>`
+            } else if(nac =='Brasileira') {
+                pais.innerHTML += `<p>Você é <strong>brasileira</strong></p>`
+            } else {
+                pais.innerHTML += `<p>Você é <strong>estrangeiro(a)</strong></p>`
+            }
+        }
+    </script>
+</body>
+</html>
