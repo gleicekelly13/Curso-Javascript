@@ -1,7 +1,7 @@
 function contar() {
-    let ini = document.getElementById('txti')
-    let fim = document.getElementById('txtf')
-    let passo = document.getElementById('txtp')
+    let ini = document.getElementById('txti') //Pega o elemento que digito no espaço 'inicio'
+    let fim = document.getElementById('txtf') //Pega o elemento que foi digitado no espaço 'fim'
+    let passo = document.getElementById('txtp') //Pega o elemento que foi digitado no espaço 'passo'
     let res = document.getElementById('res')
 
     if(ini.value.length == 0 || fim.value.length == 0 || passo.value.length == 0){
