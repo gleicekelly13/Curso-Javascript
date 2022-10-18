@@ -16,15 +16,15 @@ function contar() {
             alert('Passo inválido! Considerando Passo 1')
             p = 1
         }
-        if(i < f) { //se o valor do inicio for maior q o valor do final...
+        if(i < f) { //se o valor do inicio for menor q o valor do final...
             //Contagem crescente
             for(let c = i; c <= f; c += p) { //...é esse código que vai ser rodado
-                res.innerHTML += `${c}  \u{1F449}`  
+                res.innerHTML += `${c}  \u{1F449}`   //formatação unicode para o JS; res.innerhtml vai receber o que já tem mais o "contador"
             }    
         }else {
             //Contagem regressiva
             for(let c = i; c >= f; c -= p) {
-                res.innerHTML += `${c} \u{1F449}`
+                res.innerHTML += `${c} \u{1F449}`  //para aparecer o útimo emoji diferente
             }
         }
         res.innerHTML += `\u{1F3c1}`
