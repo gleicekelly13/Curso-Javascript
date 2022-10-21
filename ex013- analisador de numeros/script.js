@@ -21,8 +21,9 @@ function inLista(n, l) {   //verificar se o número está na lista
 
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)) {   //só será adicionado se os dois forem verdade; value == valor; valores == lista
-        alert('Tudo ok!')
+        valores.push(Number (num.value))
+            
     } else {
-        alert('Valor inválido ou já encontrado na lista')
+        alert('Valor inválido ou já encontrado na lista')           
     }
 }
