@@ -13,10 +13,10 @@ var diaSem = agora.getDay()
 
  //console.log(diaSem)
 
-switch(diaSem) {
+switch(diaSem) {        // switch só funciona com números inteiros e strings
     case 0:
         console.log('Domingo')
-        break
+        break     // Break é obrigatório(ele testa a expressão)
     case 1:
         console.log('Segunda')
         break
