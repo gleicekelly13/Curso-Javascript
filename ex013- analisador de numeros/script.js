@@ -22,10 +22,10 @@ function inLista(n, l) {   //verificar se o número está na lista
 function adicionar() {
     if(isNumero(num.value) && !inLista(num.value, valores)) {   //só será adicionado se os dois forem verdade; value == valor; valores == lista
         valores.push(Number (num.value))  //*
-        let item = document.createElement('option')
+        let item = document.createElement('option')  //para adicionar no select
         item.text = `Valor ${num.value} adicionado`
-        lista.appendChild(item)
-        res.innerHTL += ''
+        lista.appendChild(item)  //para adicionar na lista 
+        res.innerHTL = ''    //para zerar o valor (limpar o resultado)
     } else {
         alert('Valor inválido ou já encontrado na lista')           
     }
