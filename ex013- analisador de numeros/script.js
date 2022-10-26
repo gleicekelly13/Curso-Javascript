@@ -42,14 +42,14 @@ function finalizar() {            //analisa os fatos e mostra as funcionalidades
         let menor = valores [0]     //  1° valor
         let soma = 0
         let media = 0
-        for(let pos in valores) {
+        for(let pos in valores) {    //verifica um por um, e analisa maior e menor número
             soma += valores[pos]
             if(valores[pos] > maior)
                 maior = valores[pos]
             if(valores[pos] < menor)
                 menor = valores[pos]
         }
-        media = soma / tot
+        media = soma / tot     //se sabe a soma e o total de elementos, consegue calcular a média
         res.innerHTML = ''
         res.innerHTML += `<p>Ao todo, temos ${tot} números cadastrados.</p>`
         res.innerHTML += `<p>O maior número informado foi ${maior}.</p>`
