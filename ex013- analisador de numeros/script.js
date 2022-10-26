@@ -29,8 +29,8 @@ function adicionar() {
     } else {
         alert('Valor inválido ou já encontrado na lista')           
     }
-    num.value = ''
-    num.focus()
+    num.value = ''   //para apagar o número que foi digitado
+    num.focus()      //para clicar no espaço de digitar, e já deixa o cursor no lugar
 }
 
 function finalizar() {
