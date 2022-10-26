@@ -33,13 +33,13 @@ function adicionar() {
     num.focus()      //para clicar no espaço de digitar, e já deixa o cursor no lugar
 }
 
-function finalizar() {
-    if(valores.length == 0) {
+function finalizar() {            //analisa os fatos e mostra as funcionalidades
+    if(valores.length == 0) {    //se o vetor está vazio
          alert('Adicione valores antes de finalizar!')
     } else {
-        let tot = valores.length
-        let maior =  valores [0]
-        let menor = valores [0]
+        let tot = valores.length     // total de elementos 
+        let maior =  valores [0]     // 1° valor
+        let menor = valores [0]     //  1° valor
         let soma = 0
         let media = 0
         for(let pos in valores) {
