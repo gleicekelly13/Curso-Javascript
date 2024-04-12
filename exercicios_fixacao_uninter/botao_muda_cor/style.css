@@ -1,0 +1,19 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+}
+
+button {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #CCC;
+}
